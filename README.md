@@ -19,3 +19,7 @@ help
 ```
 node app -c guayaquil
 ```
+
+```
+node app --direccion "Los angeles"
+```
