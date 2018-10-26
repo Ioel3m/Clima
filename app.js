@@ -4,7 +4,7 @@ const clima = require('./config/wheater')
 
 place.getGeoData(argv.direccion).then(res_place => {
     clima.getClima(res_place.latitud, res_place.longitud).then(resp_clima => {
-        console.log(`Pronostico del clima en ${res_place.direccion} es: \n Temperatura maxima: ${resp_clima.tempMax}°\n Temperatura minima: ${resp_clima.tempMin}°`)
+        console.log(`El clima para ${res_place.direccion} es de ${resp_clima.temp}°\n`)
     })
 
 }).catch(err => {
